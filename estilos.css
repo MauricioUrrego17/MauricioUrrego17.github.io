@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+:root {
+    --clr-green: #5c5f36;
+    --clr-coffee: #432f1b;
+    --clr-white: #d8c5bc;
+}
+
+body {
+    background-color: var(--clr-white);
+    color: var(--clr-coffee);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--clr-coffee);
+    color: var(--clr-white);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.instrucciones {
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.marcador {
+    background-color: var(--clr-green);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--clr-white);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.marcador .nombre {
+    position: absolute;
+    color: var(--clr-coffee);
+    background-color: var(--clr-white);
+    line-height: 1;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid var(--clr-green);
+}
+
+.marcador .nombreUsuario {
+    right: 85%;
+}
+
+.marcador .nombrePC {
+    left: 85%;
+}
+
+.marcador .puntos {
+    font-size: 1.6rem;
+}
+
+.elegirArma {
+    margin-bottom: 2rem;
+}
+
+.elegirArma h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: .8rem;
+}
+
+.armas {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arma {
+    font-size: 2rem;
+    background-color: var(--clr-coffee);
+    border: 0;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor:
+        pointer;
+}
+
+.mensaje {
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+
+.mensaje .eleccion {
+    color: var(--clr-white);
+    background-color: var(--clr-green);
+    border-radius: .25rem;
+    padding-inline: .25rem;
+}
+
+.btn {
+    border: 2;
+    line-height: 1;
+    background-color: var(--clr-coffee);
+    color: var(--clr-white);
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.disabled {
+    display: none
+}
