@@ -1,2 +1,1 @@
-# MauricioUrrego17
-.github.io
+# MauricioUrrego17.github.io
